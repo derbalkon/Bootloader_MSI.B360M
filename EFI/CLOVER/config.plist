@@ -143,12 +143,10 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>slide=129</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>Hackintosh HD</string>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>NoEarlyProgress</key>
@@ -158,7 +156,7 @@
 		<key>SkipHibernateTimeout</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>-1</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -221,7 +219,7 @@
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
-			<true/>
+			<false/>
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
@@ -239,7 +237,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>DarkMinimal</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -260,7 +258,7 @@
 		<key>#FakeCPUID</key>
 		<string>0x010676</string>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelCpu</key>
@@ -268,120 +266,7 @@
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<true/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>USB port limit patch</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>g/s/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB port limit patch</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g+MP0w==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>g+M/0w==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port limit patch</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/s/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port limit patch</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/8PDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/8/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB port limit patch #1 10.15.x modify by DalianSky(credit ydeng)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>g/s/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port limit patch #2 10.15.x modify by DalianSky</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/kPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/k/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>AEFQUExFIFNTRAA=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAA=</data>
-			</dict>
-		</array>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatchesKextsToPatch</key>
 	<dict>
@@ -401,51 +286,51 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>04/22/2019</string>
+		<string></string>
 		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
+		<string></string>
 		<key>BiosVersion</key>
-		<string>IMP11.88Z.F000.B00.1904222000</string>
+		<string></string>
 		<key>Board-ID</key>
-		<string>Mac-7BA5B2D9E42DDD94</string>
+		<string></string>
 		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
+		<string></string>
 		<key>BoardSerialNumber</key>
-		<string>C02748902CDJG36UE</string>
+		<string></string>
 		<key>BoardType</key>
-		<integer>10</integer>
+		<integer>0</integer>
 		<key>BoardVersion</key>
-		<string>1.0</string>
+		<string></string>
 		<key>ChassisAssetTag</key>
-		<string>iMacPro-Aluminum</string>
+		<string></string>
 		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
+		<string></string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string></string>
 		<key>EfiVersion</key>
-		<string>220.260.170.0.0</string>
+		<string></string>
 		<key>Family</key>
-		<string>iMac Pro</string>
+		<string></string>
 		<key>FirmwareFeatures</key>
-		<string>0xFD8FF53F</string>
+		<string></string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF9FFF3F</string>
+		<string></string>
 		<key>LocationInChassis</key>
-		<string>Part Component</string>
+		<string></string>
 		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
+		<string></string>
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
+		<string></string>
 		<key>ProductName</key>
-		<string>iMacPro1,1</string>
+		<string></string>
 		<key>SerialNumber</key>
-		<string>C02VRTZFHX87</string>
+		<string></string>
 		<key>SmUUID</key>
-		<string>EF177C64-8AE8-4FDD-9C3E-C0454FC0409E</string>
+		<string></string>
 		<key>Version</key>
-		<string>1.0</string>
+		<string></string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
